@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الفجوة في الأجور بين الجنسين</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      line-height: 1.8;
+      color: #333;
+    }
+    header {
+      background-image: url('https://images.unsplash.com/photo-1496366401333-22191bffcf8b');
+      background-size: cover;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    header nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    header nav a:hover {
+      color: #4CAF50;
+    }
+    .language-selector {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 8px 12px;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .language-selector:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    .card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin: 20px 0;
+    }
+    .card h2 {
+      font-size: 28px;
+      color: #4CAF50;
+      margin-bottom: 20px;
+    }
+    .card p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .hero-img, .detail-img {
+      width: 100%;
+      max-width: 900px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    form {
+      margin-top: 30px;
+    }
+    input, select {
+      padding: 12px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button {
+      padding: 12px 25px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+      background-color: #333;
+      color: white;
+    }
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="language-selector" onclick="toggleLanguage()">Change Language</div>
+    <h1>الفجوة في الأجور بين الجنسين</h1>
+    <nav>
+      <a onclick="showSection('home')">الرئيسية</a>
+      <a onclick="showSection('calculator')">احسب الفرق</a>
+      <a onclick="showSection('details')">تفاصيل</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- الصفحة الرئيسية -->
+    <section id="home" class="active">
+      <div class="card">
+        <h2>مرحباً بك</h2>
+        <p>تعرف على الفجوة بين أجور النساء والرجال ولماذا ما زالت موجودة حتى اليوم. الفجوة في الأجور بين الجنسين تُعد أحد أكبر التحديات التي تواجه المجتمع اليوم. على الرغم من التقدم الكبير في حقوق المرأة والعمل، إلا أن الفجوة لا تزال قائمة. في كثير من الصناعات، يواجه الرجال والنساء نفس التحديات، لكنهم لا يحصلون على نفس التعويض. هذا يحدث في قطاعات متعددة مثل التعليم، الرعاية الصحية، والقطاع الخاص.</p>
+        <p>من الأسباب الرئيسية لهذه الفجوة هي التفرقة الواضحة في الرواتب بين الرجال والنساء في الأدوار نفسها. في بعض الحالات، قد يتطلب من النساء العمل ساعات أطول أو الحصول على مؤهلات أعلى مقارنة بالرجال للحصول على نفس الأجر. علاوة على ذلك، يؤدي غياب الأدوار القيادية النسائية في بعض الشركات إلى استمرار هذه الفجوة. الأمر الذي يتطلب إلتزام أكبر من الحكومات والشركات للقضاء على هذه الفجوة.</p>
+        <p>في هذا الموقع، سنتناول الفجوة في الأجور، العوامل التي تؤثر عليها، وكيفية حسابها من خلال أداة مخصصة لتوضيح هذه الفجوة. ستجد أيضًا المزيد من المعلومات حول الأسباب والإحصائيات التي تساهم في هذا الفرق الكبير بين الجنسين. دعونا نعمل معًا لتحقيق المساواة في الأجور.</p>
+        <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee7a" alt="صورة عمل" class="hero-img">
+      </div>
+    </section>
+
+    <!-- آلة حساب الفجوة -->
+    <section id="calculator">
+      <div class="card">
+        <h2>آلة حساب الفجوة</h2>
+        <form id="gapCalculator">
+          <label for="maleSalary">أجر الرجل:</label><br>
+          <input type="number" id="maleSalary" required> ريال<br><br>
+
+          <label for="femaleSalary">أجر المرأة:</label><br>
+          <input type="number" id="femaleSalary" required> ريال<br><br>
+
+          <label for="currency">اختر العملة:</label><br>
+          <select id="currency" required>
+            <option value="SAR">ريال سعودي</option>
+            <option value="USD">دولار أمريكي</option>
+            <option value="EUR">يورو</option>
+            <option value="GBP">جنيه إسترليني</option>
+            <option value="INR">روبية هندية</option>
+            <option value="AED">درهم إماراتي</option>
+            <option value="JOD">دينار أردني</option>
+          </select><br><br>
+
+          <button type="submit">احسب الفجوة</button>
+        </form>
+        <div id="result"></div>
+      </div>
+    </section>
+
+    <!-- تفاصيل إضافية -->
+    <section id="details">
+      <div class="card">
+        <h2>ما هي الفجوة في الأجور؟</h2>
+        <p>الفجوة في الأجور بين الجنسين تعني الفرق في متوسط الدخل بين الرجال والنساء في نفس الأدوار أو في قطاعات مختلفة. بغض النظر عن تطور المجتمع، لا يزال هناك تفاوت كبير في الأجور بين الجنسين في العديد من القطاعات. على سبيل المثال، في بعض الصناعات، يحصل الرجال على أكثر من النساء مقابل نفس العمل.</p>
+        <p>لقد أظهرت الدراسات أن النساء في بعض الأحيان يحصلن على أجور أقل لأسباب لا تتعلق بالكفاءة أو الأداء. تساهم العديد من العوامل في هذه الفجوة مثل الظروف الاجتماعية والثقافية، والأدوار التقليدية في الأسرة، والتحيزات المستمرة ضد النساء في المناصب القيادية.</p>
+        <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4" alt="مساواة في الرواتب" class="detail-img">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 جميع الحقوق محفوظة. <a href="#">اتصل بنا</a>
+  </footer>
+
+  <script>
+    // التنقل بين الأقسام
+    function showSection(sectionId) {
+      document.querySelectorAll('main section').forEach(sec => {
+        sec.classList.remove('active');
+      });
+      document.getElementById(sectionId).classList.add('active');
+    }
+
+    // برمجة آلة الحاسبة
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('gapCalculator');
+      const resultDiv = document.getElementById('result');
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const maleSalary = parseFloat(document.getElementById('maleSalary').value);
+          const femaleSalary = parseFloat(document.getElementById('femaleSalary').value);
+
+          if (isNaN(maleSalary) || isNaN(femaleSalary)) {
+            resultDiv.textContent = "الرجاء إدخال قيم صحيحة.";
+            return;
+          }
+
+          const gap = ((maleSalary - femaleSalary) / maleSalary) * 100;
+          resultDiv.textContent = `نسبة الفجوة في الأجور: ${gap.toFixed(2)}٪`;
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
